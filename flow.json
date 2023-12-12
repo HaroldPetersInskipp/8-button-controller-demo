@@ -1,0 +1,2292 @@
+[
+    {
+        "id": "42d29edbf28948ef",
+        "type": "tab",
+        "label": "Rhythm Game",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1010c4613679a4f3",
+        "type": "group",
+        "z": "42d29edbf28948ef",
+        "name": "Player 2",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "16449c033912db53",
+            "2d54b3b73b523afd",
+            "fbc285bb593834e2",
+            "e2bfd2f118884fc6",
+            "600686fed4b42764",
+            "aec6a986d93991e8",
+            "c39be4fd5277e4c7",
+            "29a33232c55d84c0",
+            "1474ae1bb2b730f3",
+            "85df748c4c11c2e5",
+            "ce07c816352a41ce",
+            "261605b446ef7e1c",
+            "8b797a9e994ef15e",
+            "138b61320f78ca54",
+            "6cc2e3856d161071",
+            "6ec3456ae9737ade",
+            "42aab23cbdb95906",
+            "21eb88ab11a0c5b3",
+            "27a5aafcf73e4fde",
+            "bbac3d8f580d5319",
+            "988eecb2900f1509",
+            "de5d2e0d9d3e129c",
+            "f3281104a73601a1",
+            "2dc3f6b3d2bca7ea",
+            "098dd649458844a5",
+            "7e38153d26bbf0e9",
+            "58b4374d5cbe3c7a",
+            "44c218a6cffd1ce8",
+            "df725402a54ef27d",
+            "4f2525e597be2208",
+            "0b035fcfdbe561ab",
+            "ed9b417cb1c5934a",
+            "b059e9745f01aee5",
+            "52659c889b18fb10",
+            "7b83574c04439e46"
+        ],
+        "x": 14,
+        "y": 959,
+        "w": 2192,
+        "h": 602
+    },
+    {
+        "id": "35c291051fa43ec6",
+        "type": "group",
+        "z": "42d29edbf28948ef",
+        "name": "Player 1",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "327427eb509f46f1",
+            "1c2f5acdfe3ef51b",
+            "746efa5310d02b73",
+            "c93b51ebf935da49",
+            "67b00a433be3ade3",
+            "3e1a010a2c38626a",
+            "82d84b1bd553fd1a",
+            "a3526622f02900da",
+            "77802d5ae6e27d57",
+            "c9a5cef4133e4bf3",
+            "c409d1fcd2c071db",
+            "9ba8805f9985922c",
+            "d21db80d5c1128c6",
+            "3349127c0a93b3ab",
+            "a13f8ff9a2b7cea1",
+            "0a9a2a82e5a5a58c",
+            "3ed8263475c4020a",
+            "86e24e85a3d71090",
+            "049f22344c06ccd1",
+            "b8f5713825209f0f",
+            "81228a3b8f76e280",
+            "03bd063cdf86cd35",
+            "f52ab5c5b8b73818",
+            "c3b301381936d124",
+            "7b8dfaf139defa4b",
+            "c8ef2f6dcb55b09a",
+            "a92476d0d4943542",
+            "48bcfcee8f79385a",
+            "0ffcd30caa50ca9d",
+            "7461ade5832b98aa",
+            "3995ecdce3b78ad8",
+            "0bf1b24442642acb",
+            "b109b50c2b133ddf",
+            "d01d3e822d2b5df5",
+            "3f4943958e930b13"
+        ],
+        "x": 14,
+        "y": 19,
+        "w": 2212,
+        "h": 582
+    },
+    {
+        "id": "327427eb509f46f1",
+        "type": "websocket in",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "",
+        "server": "55f8c51260f62f2a",
+        "client": "",
+        "x": 120,
+        "y": 100,
+        "wires": [
+            [
+                "7b8dfaf139defa4b"
+            ]
+        ]
+    },
+    {
+        "id": "1c2f5acdfe3ef51b",
+        "type": "debug",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "746efa5310d02b73",
+        "type": "rbe",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": false,
+        "property": "payload",
+        "topi": "topic",
+        "x": 390,
+        "y": 100,
+        "wires": [
+            [
+                "c93b51ebf935da49"
+            ]
+        ]
+    },
+    {
+        "id": "c93b51ebf935da49",
+        "type": "json",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 510,
+        "y": 100,
+        "wires": [
+            [
+                "a3526622f02900da",
+                "1c2f5acdfe3ef51b",
+                "9ba8805f9985922c"
+            ]
+        ]
+    },
+    {
+        "id": "67b00a433be3ade3",
+        "type": "ui_template",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "group": "cdd3663f711e8806",
+        "name": "Controller 1 inputs",
+        "order": 21,
+        "width": 6,
+        "height": 3,
+        "format": "",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1770,
+        "y": 100,
+        "wires": [
+            [
+                "3e1a010a2c38626a"
+            ]
+        ]
+    },
+    {
+        "id": "3e1a010a2c38626a",
+        "type": "debug",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1930,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "82d84b1bd553fd1a",
+        "type": "template",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "ButtonControllerTemplate",
+        "field": "template",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<div class=\"controller_1\">\n    <div class=\"row\">\n        <img class=\"square\" src=\"/PlaystationButtons/SVG/square{{square}}.svg\" width=\"64\" height=\"64\">\n        <img class=\"cross\" src=\"/PlaystationButtons/SVG/cross{{cross}}.svg\" width=\"64\" height=\"64\">\n        <img class=\"triangle\" src=\"/PlaystationButtons/SVG/triangle{{triangle}}.svg\" width=\"64\" height=\"64\">\n        <img class=\"circle\" src=\"/PlaystationButtons/SVG/circle{{circle}}.svg\" width=\"64\" height=\"64\">\n    </div>\n    <div class=\"row\">\n        <img class=\"left\" src=\"/PlaystationButtons/SVG/left{{left}}.svg\" width=\"64\" height=\"64\">\n        <img class=\"down\" src=\"/PlaystationButtons/SVG/down{{down}}.svg\" width=\"64\" height=\"64\">\n        <img class=\"up\" src=\"/PlaystationButtons/SVG/up{{up}}.svg\" width=\"64\" height=\"64\">\n        <img class=\"right\" src=\"/PlaystationButtons/SVG/right{{right}}.svg\" width=\"64\" height=\"64\">\n    </div>    \n</div>",
+        "output": "str",
+        "x": 1530,
+        "y": 100,
+        "wires": [
+            [
+                "67b00a433be3ade3"
+            ]
+        ]
+    },
+    {
+        "id": "a3526622f02900da",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "unwrap payload",
+        "func": "msg = msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 100,
+        "wires": [
+            [
+                "82d84b1bd553fd1a"
+            ]
+        ]
+    },
+    {
+        "id": "77802d5ae6e27d57",
+        "type": "debug",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1570,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "c9a5cef4133e4bf3",
+        "type": "change",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "match",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1400,
+        "y": 380,
+        "wires": [
+            [
+                "77802d5ae6e27d57"
+            ]
+        ]
+    },
+    {
+        "id": "c409d1fcd2c071db",
+        "type": "debug",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "9ba8805f9985922c",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "compare",
+        "func": "if (JSON.stringify(msg.payload) == JSON.stringify(flow.get(\"match\", \"file\"))) {\n    return { \"payload\": msg.payload, \"match\": flow.get(\"match\", \"file\"), \"topic\":true};\n} else return { \"payload\": msg.payload, \"match\": flow.get(\"match\", \"file\"), \"topic\": false };",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 160,
+        "wires": [
+            [
+                "d21db80d5c1128c6"
+            ]
+        ]
+    },
+    {
+        "id": "d21db80d5c1128c6",
+        "type": "switch",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "is correct?",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 810,
+        "y": 160,
+        "wires": [
+            [
+                "c409d1fcd2c071db",
+                "86e24e85a3d71090",
+                "f52ab5c5b8b73818"
+            ],
+            [
+                "3349127c0a93b3ab"
+            ]
+        ]
+    },
+    {
+        "id": "3349127c0a93b3ab",
+        "type": "debug",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "a13f8ff9a2b7cea1",
+        "type": "ui_template",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "group": "cdd3663f711e8806",
+        "name": "Controller 1 Layout",
+        "order": 11,
+        "width": 6,
+        "height": 3,
+        "format": "<div class=\"controller_1_layout\">\n    <div class=\"row\">\n        <img class=\"square\" src=\"/PlaystationButtons/SVG/square1.svg\" width=\"64\" height=\"64\">\n        <img class=\"cross\" src=\"/PlaystationButtons/SVG/cross1.svg\" width=\"64\" height=\"64\">\n        <img class=\"triangle\" src=\"/PlaystationButtons/SVG/triangle1.svg\" width=\"64\" height=\"64\">\n        <img class=\"circle\" src=\"/PlaystationButtons/SVG/circle1.svg\" width=\"64\" height=\"64\">\n    </div>\n    <div class=\"row\">\n        <img class=\"left\" src=\"/PlaystationButtons/SVG/left1.svg\" width=\"64\" height=\"64\">\n        <img class=\"down\" src=\"/PlaystationButtons/SVG/down1.svg\" width=\"64\" height=\"64\">\n        <img class=\"up\" src=\"/PlaystationButtons/SVG/up1.svg\" width=\"64\" height=\"64\">\n        <img class=\"right\" src=\"/PlaystationButtons/SVG/right1.svg\" width=\"64\" height=\"64\">\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1770,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0a9a2a82e5a5a58c",
+        "type": "ui_template",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "group": "cdd3663f711e8806",
+        "name": "Goal 1",
+        "order": 16,
+        "width": 6,
+        "height": 3,
+        "format": "",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1790,
+        "y": 340,
+        "wires": [
+            [
+                "b8f5713825209f0f"
+            ]
+        ]
+    },
+    {
+        "id": "3ed8263475c4020a",
+        "type": "template",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "ButtonControllerTemplate",
+        "field": "template",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<div class=\"controller_1\">\n<div class=\"row\">\n        <img class=\"square\" src=\"/PlaystationButtons/SVG/square{{square}}.svg\" width=\"64\" height=\"64\">\n        <img class=\"cross\" src=\"/PlaystationButtons/SVG/cross{{cross}}.svg\" width=\"64\" height=\"64\">\n        <img class=\"triangle\" src=\"/PlaystationButtons/SVG/triangle{{triangle}}.svg\" width=\"64\" height=\"64\">\n        <img class=\"circle\" src=\"/PlaystationButtons/SVG/circle{{circle}}.svg\" width=\"64\" height=\"64\">\n    </div>\n    <div class=\"row\">\n        <img class=\"left\" src=\"/PlaystationButtons/SVG/left{{left}}.svg\" width=\"64\" height=\"64\">\n        <img class=\"down\" src=\"/PlaystationButtons/SVG/down{{down}}.svg\" width=\"64\" height=\"64\">\n        <img class=\"up\" src=\"/PlaystationButtons/SVG/up{{up}}.svg\" width=\"64\" height=\"64\">\n        <img class=\"right\" src=\"/PlaystationButtons/SVG/right{{right}}.svg\" width=\"64\" height=\"64\">\n    </div>    \n</div>",
+        "output": "str",
+        "x": 1610,
+        "y": 340,
+        "wires": [
+            [
+                "0a9a2a82e5a5a58c"
+            ]
+        ]
+    },
+    {
+        "id": "86e24e85a3d71090",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "blank",
+        "func": "return { \"payload\": \"\"};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 380,
+        "wires": [
+            [
+                "d01d3e822d2b5df5"
+            ]
+        ]
+    },
+    {
+        "id": "8beabe5ae4fb8ecb",
+        "type": "ui_text",
+        "z": "42d29edbf28948ef",
+        "group": "cdd3663f711e8806",
+        "order": 8,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "Controller layout",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 260,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "3ea7124436b440d9",
+        "type": "ui_text",
+        "z": "42d29edbf28948ef",
+        "group": "cdd3663f711e8806",
+        "order": 14,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "Match these buttons",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 240,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "4b0e9b80bb9ae0a7",
+        "type": "ui_text",
+        "z": "42d29edbf28948ef",
+        "group": "cdd3663f711e8806",
+        "order": 19,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "Pressed buttons",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 260,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "049f22344c06ccd1",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "all 0's patch",
+        "func": "if (msg.payload.left === 0 && msg.payload.down === 0 && msg.payload.up === 0 && msg.payload.right === 0 && msg.payload.circle === 0 && msg.payload.triangle === 0 && msg.payload.cross === 0 && msg.payload.square === 0 ) {\n    msg.payload = { \"left\": 0, \"down\": 0, \"up\": 0, \"right\": 0, \"circle\": 0, \"triangle\": 0, \"cross\": 1, \"square\": 0 };\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 380,
+        "wires": [
+            [
+                "c9a5cef4133e4bf3",
+                "81228a3b8f76e280"
+            ]
+        ]
+    },
+    {
+        "id": "16449c033912db53",
+        "type": "websocket in",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "",
+        "server": "2160113441ee449f",
+        "client": "",
+        "x": 120,
+        "y": 1040,
+        "wires": [
+            [
+                "7e38153d26bbf0e9"
+            ]
+        ]
+    },
+    {
+        "id": "2d54b3b73b523afd",
+        "type": "debug",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "fbc285bb593834e2",
+        "type": "rbe",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": false,
+        "property": "payload",
+        "topi": "topic",
+        "x": 390,
+        "y": 1040,
+        "wires": [
+            [
+                "e2bfd2f118884fc6"
+            ]
+        ]
+    },
+    {
+        "id": "e2bfd2f118884fc6",
+        "type": "json",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 510,
+        "y": 1040,
+        "wires": [
+            [
+                "aec6a986d93991e8",
+                "2d54b3b73b523afd",
+                "29a33232c55d84c0"
+            ]
+        ]
+    },
+    {
+        "id": "600686fed4b42764",
+        "type": "template",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "ButtonControllerTemplate",
+        "field": "template",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<div class=\"controller_2\">\n    <div class=\"row\">\n        <img class=\"square\" src=\"/PlaystationButtons/SVG/square{{square}}.svg\" width=\"64\" height=\"64\">\n        <img class=\"cross\" src=\"/PlaystationButtons/SVG/cross{{cross}}.svg\" width=\"64\" height=\"64\">\n        <img class=\"triangle\" src=\"/PlaystationButtons/SVG/triangle{{triangle}}.svg\" width=\"64\" height=\"64\">\n        <img class=\"circle\" src=\"/PlaystationButtons/SVG/circle{{circle}}.svg\" width=\"64\" height=\"64\">\n    </div>\n    <div class=\"row\">\n        <img class=\"left\" src=\"/PlaystationButtons/SVG/left{{left}}.svg\" width=\"64\" height=\"64\">\n        <img class=\"down\" src=\"/PlaystationButtons/SVG/down{{down}}.svg\" width=\"64\" height=\"64\">\n        <img class=\"up\" src=\"/PlaystationButtons/SVG/up{{up}}.svg\" width=\"64\" height=\"64\">\n        <img class=\"right\" src=\"/PlaystationButtons/SVG/right{{right}}.svg\" width=\"64\" height=\"64\">\n    </div>    \n</div>",
+        "output": "str",
+        "x": 1530,
+        "y": 1040,
+        "wires": [
+            [
+                "42aab23cbdb95906"
+            ]
+        ]
+    },
+    {
+        "id": "aec6a986d93991e8",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "unwrap payload",
+        "func": "msg = msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 1040,
+        "wires": [
+            [
+                "600686fed4b42764"
+            ]
+        ]
+    },
+    {
+        "id": "c39be4fd5277e4c7",
+        "type": "debug",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "29a33232c55d84c0",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "compare",
+        "func": "if (JSON.stringify(msg.payload) == JSON.stringify(flow.get(\"match2\", \"file\"))) {\n    return { \"payload\": msg.payload, \"match\": flow.get(\"match2\", \"file\"), \"topic\":true};\n} else return { \"payload\": msg.payload, \"match\": flow.get(\"match2\", \"file\"), \"topic\": false };",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 1100,
+        "wires": [
+            [
+                "1474ae1bb2b730f3"
+            ]
+        ]
+    },
+    {
+        "id": "1474ae1bb2b730f3",
+        "type": "switch",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "is correct?",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 810,
+        "y": 1100,
+        "wires": [
+            [
+                "c39be4fd5277e4c7",
+                "261605b446ef7e1c",
+                "2dc3f6b3d2bca7ea"
+            ],
+            [
+                "85df748c4c11c2e5"
+            ]
+        ]
+    },
+    {
+        "id": "85df748c4c11c2e5",
+        "type": "debug",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "ce07c816352a41ce",
+        "type": "template",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "ButtonControllerTemplate",
+        "field": "template",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<div class=\"controller_2\">\n    <div class=\"row\">\n        <img class=\"square\" src=\"/PlaystationButtons/SVG/square{{square}}.svg\" width=\"64\" height=\"64\">\n        <img class=\"cross\" src=\"/PlaystationButtons/SVG/cross{{cross}}.svg\" width=\"64\" height=\"64\">\n        <img class=\"triangle\" src=\"/PlaystationButtons/SVG/triangle{{triangle}}.svg\" width=\"64\" height=\"64\">\n        <img class=\"circle\" src=\"/PlaystationButtons/SVG/circle{{circle}}.svg\" width=\"64\" height=\"64\">\n    </div>\n    <div class=\"row\">\n        <img class=\"left\" src=\"/PlaystationButtons/SVG/left{{left}}.svg\" width=\"64\" height=\"64\">\n        <img class=\"down\" src=\"/PlaystationButtons/SVG/down{{down}}.svg\" width=\"64\" height=\"64\">\n        <img class=\"up\" src=\"/PlaystationButtons/SVG/up{{up}}.svg\" width=\"64\" height=\"64\">\n        <img class=\"right\" src=\"/PlaystationButtons/SVG/right{{right}}.svg\" width=\"64\" height=\"64\">\n    </div>    \n</div>",
+        "output": "str",
+        "x": 1610,
+        "y": 1300,
+        "wires": [
+            [
+                "21eb88ab11a0c5b3"
+            ]
+        ]
+    },
+    {
+        "id": "261605b446ef7e1c",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "blank",
+        "func": "return { \"payload\": \"\"};",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 1340,
+        "wires": [
+            [
+                "44c218a6cffd1ce8"
+            ]
+        ]
+    },
+    {
+        "id": "8b797a9e994ef15e",
+        "type": "debug",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1570,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "138b61320f78ca54",
+        "type": "change",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "match2",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1400,
+        "y": 1340,
+        "wires": [
+            [
+                "8b797a9e994ef15e"
+            ]
+        ]
+    },
+    {
+        "id": "6cc2e3856d161071",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "all 0's patch",
+        "func": "if (msg.payload.left === 0 && msg.payload.down === 0 && msg.payload.up === 0 && msg.payload.right === 0 && msg.payload.circle === 0 && msg.payload.triangle === 0 && msg.payload.cross === 0 && msg.payload.square === 0 ) {\n    msg.payload = { \"left\": 0, \"down\": 0, \"up\": 0, \"right\": 0, \"circle\": 0, \"triangle\": 0, \"cross\": 1, \"square\": 0 };\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 1340,
+        "wires": [
+            [
+                "138b61320f78ca54",
+                "de5d2e0d9d3e129c"
+            ]
+        ]
+    },
+    {
+        "id": "6ec3456ae9737ade",
+        "type": "ui_template",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "group": "cdd3663f711e8806",
+        "name": "Controller 2 Layout",
+        "order": 12,
+        "width": 6,
+        "height": 3,
+        "format": "<div class=\"controller_2_layout\">\n    <img class=\"square\" src=\"/PlaystationButtons/SVG/square1.svg\" width=\"64\" height=\"64\">\n    <img class=\"cross\" src=\"/PlaystationButtons/SVG/cross1.svg\" width=\"64\" height=\"64\">\n    <img class=\"triangle\" src=\"/PlaystationButtons/SVG/triangle1.svg\" width=\"64\" height=\"64\">\n    <img class=\"circle\" src=\"/PlaystationButtons/SVG/circle1.svg\" width=\"64\" height=\"64\">\n    <img class=\"left\" src=\"/PlaystationButtons/SVG/left1.svg\" width=\"64\" height=\"64\">\n    <img class=\"down\" src=\"/PlaystationButtons/SVG/down1.svg\" width=\"64\" height=\"64\">\n    <img class=\"up\" src=\"/PlaystationButtons/SVG/up1.svg\" width=\"64\" height=\"64\">\n    <img class=\"right\" src=\"/PlaystationButtons/SVG/right1.svg\" width=\"64\" height=\"64\">\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1770,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "42aab23cbdb95906",
+        "type": "ui_template",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "group": "cdd3663f711e8806",
+        "name": "Controller 2 inputs",
+        "order": 22,
+        "width": 6,
+        "height": 3,
+        "format": "",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1770,
+        "y": 1040,
+        "wires": [
+            [
+                "27a5aafcf73e4fde"
+            ]
+        ]
+    },
+    {
+        "id": "21eb88ab11a0c5b3",
+        "type": "ui_template",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "group": "cdd3663f711e8806",
+        "name": "Goal 2",
+        "order": 17,
+        "width": 6,
+        "height": 3,
+        "format": "",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1790,
+        "y": 1300,
+        "wires": [
+            [
+                "bbac3d8f580d5319"
+            ]
+        ]
+    },
+    {
+        "id": "27a5aafcf73e4fde",
+        "type": "debug",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1930,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "bbac3d8f580d5319",
+        "type": "debug",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1930,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "b8f5713825209f0f",
+        "type": "debug",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1930,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "1901e81f529b8ef0",
+        "type": "comment",
+        "z": "42d29edbf28948ef",
+        "name": "TODO:",
+        "info": "In a DDR (Dance Dance Revolution) or any rhythm game implemented in Node-RED or a similar platform,\nvarious elements can be saved in the flow state to maintain game progress and store relevant information.\nThese elements may include:\n\n    Player Data:\n        Player name or ID\n        Player profile or statistics\n        High scores and performance history\n\n    Game Progress:\n        Current level or stage\n        Game mode (e.g., single player, multiplayer)\n        Achievements and progress towards unlocking new content\n\n    Song Data:\n        Song selection, including the chosen difficulty level\n        Current song's metadata (title, artist, BPM)\n        Custom songs or user-generated content\n\n    Gameplay Elements:\n        Current score and combo\n        Accuracy or timing statistics (perfect, good, miss)\n        Health or life bar (if applicable)\n        Progression through arrows or notes\n\n    Visual and Audio Settings:\n        Game theme or skin\n        Sound effects and music volume\n        Display settings (resolution, aspect ratio)\n        Video and audio synchronization settings\n\n    User Preferences:\n        Input settings (e.g., key bindings or controller configuration)\n        Language preferences\n        Visual effects and modifiers (e.g., hidden arrows, mirror mode)\n\n    Customization and Unlockables:\n        Unlocked characters or avatars\n        Costumes and accessories for avatars\n        In-game currency or tokens for customization\n        Downloadable content (DLC) status\n\n    Multiplayer and Social Features:\n        Friend lists and social connections\n        Multiplayer room settings and history\n        Leaderboards and online rankings\n        Multiplayer match history\n\n    Notifications and Messages:\n        In-game notifications or messages\n        Alerts for new content or events\n        Player-to-player messaging system\n\nThese elements can be saved in the Node-RED flow state to maintain a player's progress and settings,\nmaking it easier to resume the game, track performance, and offer a personalized gaming experience.\nStoring this information in the flow state ensures that it is accessible across different parts of\nthe game and between different flows within the Node-RED application.",
+        "x": 790,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "988eecb2900f1509",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "random button mode",
+        "func": "// Function to generate a random object with 1's and 0's\nfunction generateRandomObject() {\n    const keys = [\"left\", \"down\", \"up\", \"right\", \"circle\", \"triangle\", \"cross\", \"square\"];\n    const randomObject = {};\n\n    keys.forEach(key => {\n        randomObject[key] = Math.round(Math.random());\n    });\n\n    return randomObject;\n}\n\n// Output the generated random object\nmsg.payload = generateRandomObject();\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 1520,
+        "wires": [
+            [
+                "6cc2e3856d161071"
+            ]
+        ]
+    },
+    {
+        "id": "81228a3b8f76e280",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "unwrap payload",
+        "func": "msg = msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1400,
+        "y": 340,
+        "wires": [
+            [
+                "3ed8263475c4020a"
+            ]
+        ]
+    },
+    {
+        "id": "de5d2e0d9d3e129c",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "unwrap payload",
+        "func": "msg = msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1400,
+        "y": 1300,
+        "wires": [
+            [
+                "ce07c816352a41ce"
+            ]
+        ]
+    },
+    {
+        "id": "03bd063cdf86cd35",
+        "type": "ui_text",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "group": "cdd3663f711e8806",
+        "order": 6,
+        "width": 2,
+        "height": 1,
+        "name": "",
+        "label": "P1 Score",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2140,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "f3281104a73601a1",
+        "type": "ui_text",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "group": "cdd3663f711e8806",
+        "order": 9,
+        "width": 2,
+        "height": 1,
+        "name": "",
+        "label": "P2 Score",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2120,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "6bef58d29c15174e",
+        "type": "ui_button",
+        "z": "42d29edbf28948ef",
+        "name": "",
+        "group": "cdd3663f711e8806",
+        "order": 2,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "label": "Reset",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 450,
+        "y": 840,
+        "wires": [
+            [
+                "788b23319e0f3c1b",
+                "261605b446ef7e1c",
+                "86e24e85a3d71090"
+            ]
+        ]
+    },
+    {
+        "id": "2dc3f6b3d2bca7ea",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "score counter p2",
+        "func": "// Initialize the counter if not present in the flow context\nlet count = flow.get(\"p2Score\", \"file\") || 0;\n\n// Increment the counter\ncount++;\n\nflow.set(\"p2Score\", count, \"file\")\n\nif (count === flow.get(\"scoreLimit\", \"file\")) {\n    msg.payload = \"P2 WINS\"\n}  else {\n    // Output the incremented counter value\n    msg.payload = count;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 1100,
+        "wires": [
+            [
+                "f3281104a73601a1",
+                "098dd649458844a5"
+            ]
+        ]
+    },
+    {
+        "id": "f52ab5c5b8b73818",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "score counter p1",
+        "func": "// Initialize the counter if not present in the flow context\nlet count = flow.get(\"p1Score\", \"file\") || 0;\n\n// Increment the counter\ncount++;\n\nflow.set(\"p1Score\", count, \"file\")\n\nif (count === flow.get(\"scoreLimit\", \"file\")) {\n    msg.payload = \"P1 WINS\"\n} else {\n    // Output the incremented counter value\n    msg.payload = count;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 160,
+        "wires": [
+            [
+                "03bd063cdf86cd35",
+                "c3b301381936d124"
+            ]
+        ]
+    },
+    {
+        "id": "788b23319e0f3c1b",
+        "type": "change",
+        "z": "42d29edbf28948ef",
+        "name": "reset stats",
+        "rules": [
+            {
+                "t": "set",
+                "p": "p1Score",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num",
+                "dc": true
+            },
+            {
+                "t": "set",
+                "p": "p2Score",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "block",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "progress1",
+                "pt": "flow",
+                "to": "1",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "progress2",
+                "pt": "flow",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1930,
+        "y": 840,
+        "wires": [
+            [
+                "f3281104a73601a1",
+                "03bd063cdf86cd35"
+            ]
+        ]
+    },
+    {
+        "id": "b836bbbdc3052fd4",
+        "type": "ui_text_input",
+        "z": "42d29edbf28948ef",
+        "name": "",
+        "label": "Score limit",
+        "tooltip": "",
+        "group": "cdd3663f711e8806",
+        "order": 3,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 110,
+        "y": 640,
+        "wires": [
+            [
+                "a67db205ec260a15"
+            ]
+        ]
+    },
+    {
+        "id": "1e8989dbdd3e9260",
+        "type": "debug",
+        "z": "42d29edbf28948ef",
+        "name": "debug 354",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "a67db205ec260a15",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "name": "to number and save",
+        "func": "flow.set(\"scoreLimit\", parseInt(msg.payload), \"file\")\nflow.set(\"block\", false, \"file\");\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 640,
+        "wires": [
+            [
+                "1e8989dbdd3e9260"
+            ]
+        ]
+    },
+    {
+        "id": "098dd649458844a5",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "win and end game",
+        "func": "if (msg.payload === \"P2 WINS\") {\n    flow.set(\"block\", true, \"file\");\n};",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c3b301381936d124",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "win and end game",
+        "func": "if (msg.payload === \"P1 WINS\") {\n    flow.set(\"block\", true, \"file\");\n};",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7e38153d26bbf0e9",
+        "type": "switch",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "block",
+        "property": "block",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 270,
+        "y": 1040,
+        "wires": [
+            [],
+            [
+                "fbc285bb593834e2"
+            ]
+        ]
+    },
+    {
+        "id": "7b8dfaf139defa4b",
+        "type": "switch",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "block",
+        "property": "block",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 270,
+        "y": 100,
+        "wires": [
+            [],
+            [
+                "746efa5310d02b73"
+            ]
+        ]
+    },
+    {
+        "id": "58b4374d5cbe3c7a",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "single button mode",
+        "func": "// Function to generate an object with only one key set to 1\nfunction generateRandomSingleObject() {\n    const keys = [\"left\", \"down\", \"up\", \"right\", \"circle\", \"triangle\", \"cross\", \"square\"];\n    const randomIndex = Math.floor(Math.random() * keys.length);\n    const randomObject = {};\n\n    keys.forEach((key, index) => {\n        randomObject[key] = index === randomIndex ? 1 : 0;\n    });\n\n    return randomObject;\n}\n\n// Output the generated random single object\nmsg.payload = generateRandomSingleObject();\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 1200,
+        "wires": [
+            [
+                "6cc2e3856d161071"
+            ]
+        ]
+    },
+    {
+        "id": "44c218a6cffd1ce8",
+        "type": "switch",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "mode",
+        "property": "mode",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Single button mode",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Two button mode",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Three button mode",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Four button mode",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Five button mode",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Six button mode",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Seven button mode",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Progressive mode",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Random buttons mode",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 9,
+        "x": 770,
+        "y": 1340,
+        "wires": [
+            [
+                "58b4374d5cbe3c7a"
+            ],
+            [
+                "df725402a54ef27d"
+            ],
+            [
+                "4f2525e597be2208"
+            ],
+            [
+                "0b035fcfdbe561ab"
+            ],
+            [
+                "ed9b417cb1c5934a"
+            ],
+            [
+                "b059e9745f01aee5"
+            ],
+            [
+                "52659c889b18fb10"
+            ],
+            [
+                "7b83574c04439e46"
+            ],
+            [
+                "988eecb2900f1509"
+            ]
+        ]
+    },
+    {
+        "id": "885029142959f821",
+        "type": "ui_dropdown",
+        "z": "42d29edbf28948ef",
+        "name": "",
+        "label": "",
+        "tooltip": "Mode select",
+        "place": "Mode select",
+        "group": "cdd3663f711e8806",
+        "order": 4,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "Single button mode",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "Two button mode",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "Three button mode",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "Four button mode",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "Five button mode",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "Six button mode",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "Seven button mode",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "Progressive mode",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "Random buttons mode",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "",
+        "topicType": "str",
+        "className": "",
+        "x": 100,
+        "y": 760,
+        "wires": [
+            [
+                "54d5186115d56ded",
+                "77ddf5197ad237c7"
+            ]
+        ]
+    },
+    {
+        "id": "53877e083c73de73",
+        "type": "debug",
+        "z": "42d29edbf28948ef",
+        "name": "debug 355",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "54d5186115d56ded",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "name": "save mode",
+        "func": "flow.set(\"mode\", msg.payload, \"file\");\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 760,
+        "wires": [
+            [
+                "53877e083c73de73",
+                "6bef58d29c15174e"
+            ]
+        ]
+    },
+    {
+        "id": "c8ef2f6dcb55b09a",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "random button mode",
+        "func": "// Function to generate a random object with 1's and 0's\nfunction generateRandomObject() {\n    const keys = [\"left\", \"down\", \"up\", \"right\", \"circle\", \"triangle\", \"cross\", \"square\"];\n    const randomObject = {};\n\n    keys.forEach(key => {\n        randomObject[key] = Math.round(Math.random());\n    });\n\n    return randomObject;\n}\n\n// Output the generated random object\nmsg.payload = generateRandomObject();\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 560,
+        "wires": [
+            [
+                "049f22344c06ccd1"
+            ]
+        ]
+    },
+    {
+        "id": "a92476d0d4943542",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "single button mode",
+        "func": "// Function to generate an object with only one key set to 1\nfunction generateRandomSingleObject() {\n    const keys = [\"left\", \"down\", \"up\", \"right\", \"circle\", \"triangle\", \"cross\", \"square\"];\n    const randomIndex = Math.floor(Math.random() * keys.length);\n    const randomObject = {};\n\n    keys.forEach((key, index) => {\n        randomObject[key] = index === randomIndex ? 1 : 0;\n    });\n\n    return randomObject;\n}\n\n// Output the generated random single object\nmsg.payload = generateRandomSingleObject();\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 240,
+        "wires": [
+            [
+                "049f22344c06ccd1"
+            ]
+        ]
+    },
+    {
+        "id": "df725402a54ef27d",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "two button mode",
+        "func": "// Function to generate an object with exactly X keys set to 1\nfunction generateRandomObject() {\n    const keys = [\"left\", \"down\", \"up\", \"right\", \"circle\", \"triangle\", \"cross\", \"square\"];\n    const selectedIndices = [];\n\n    // Select X random indices\n    while (selectedIndices.length < 2) {\n        const randomIndex = Math.floor(Math.random() * keys.length);\n        if (!selectedIndices.includes(randomIndex)) {\n            selectedIndices.push(randomIndex);\n        }\n    }\n\n    const randomObject = {};\n\n    keys.forEach((key, index) => {\n        randomObject[key] = selectedIndices.includes(index) ? 1 : 0;\n    });\n\n    return randomObject;\n}\n\n// Output the generated random object\nmsg.payload = generateRandomObject();\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 1240,
+        "wires": [
+            [
+                "6cc2e3856d161071"
+            ]
+        ]
+    },
+    {
+        "id": "48bcfcee8f79385a",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "two button mode",
+        "func": "// Function to generate an object with exactly X keys set to 1\nfunction generateRandomObject() {\n    const keys = [\"left\", \"down\", \"up\", \"right\", \"circle\", \"triangle\", \"cross\", \"square\"];\n    const selectedIndices = [];\n\n    // Select X random indices\n    while (selectedIndices.length < 2) {\n        const randomIndex = Math.floor(Math.random() * keys.length);\n        if (!selectedIndices.includes(randomIndex)) {\n            selectedIndices.push(randomIndex);\n        }\n    }\n\n    const randomObject = {};\n\n    keys.forEach((key, index) => {\n        randomObject[key] = selectedIndices.includes(index) ? 1 : 0;\n    });\n\n    return randomObject;\n}\n\n// Output the generated random object\nmsg.payload = generateRandomObject();\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 280,
+        "wires": [
+            [
+                "049f22344c06ccd1"
+            ]
+        ]
+    },
+    {
+        "id": "4f2525e597be2208",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "three button mode",
+        "func": "// Function to generate an object with exactly X keys set to 1\nfunction generateRandomObject() {\n    const keys = [\"left\", \"down\", \"up\", \"right\", \"circle\", \"triangle\", \"cross\", \"square\"];\n    const selectedIndices = [];\n\n    // Select X random indices\n    while (selectedIndices.length < 3) {\n        const randomIndex = Math.floor(Math.random() * keys.length);\n        if (!selectedIndices.includes(randomIndex)) {\n            selectedIndices.push(randomIndex);\n        }\n    }\n\n    const randomObject = {};\n\n    keys.forEach((key, index) => {\n        randomObject[key] = selectedIndices.includes(index) ? 1 : 0;\n    });\n\n    return randomObject;\n}\n\n// Output the generated random object\nmsg.payload = generateRandomObject();\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 1280,
+        "wires": [
+            [
+                "6cc2e3856d161071"
+            ]
+        ]
+    },
+    {
+        "id": "0b035fcfdbe561ab",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "four button mode",
+        "func": "// Function to generate an object with exactly X keys set to 1\nfunction generateRandomObject() {\n    const keys = [\"left\", \"down\", \"up\", \"right\", \"circle\", \"triangle\", \"cross\", \"square\"];\n    const selectedIndices = [];\n\n    // Select X random indices\n    while (selectedIndices.length < 4) {\n        const randomIndex = Math.floor(Math.random() * keys.length);\n        if (!selectedIndices.includes(randomIndex)) {\n            selectedIndices.push(randomIndex);\n        }\n    }\n\n    const randomObject = {};\n\n    keys.forEach((key, index) => {\n        randomObject[key] = selectedIndices.includes(index) ? 1 : 0;\n    });\n\n    return randomObject;\n}\n\n// Output the generated random object\nmsg.payload = generateRandomObject();\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 1320,
+        "wires": [
+            [
+                "6cc2e3856d161071"
+            ]
+        ]
+    },
+    {
+        "id": "0ffcd30caa50ca9d",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "three button mode",
+        "func": "// Function to generate an object with exactly X keys set to 1\nfunction generateRandomObject() {\n    const keys = [\"left\", \"down\", \"up\", \"right\", \"circle\", \"triangle\", \"cross\", \"square\"];\n    const selectedIndices = [];\n\n    // Select X random indices\n    while (selectedIndices.length < 3) {\n        const randomIndex = Math.floor(Math.random() * keys.length);\n        if (!selectedIndices.includes(randomIndex)) {\n            selectedIndices.push(randomIndex);\n        }\n    }\n\n    const randomObject = {};\n\n    keys.forEach((key, index) => {\n        randomObject[key] = selectedIndices.includes(index) ? 1 : 0;\n    });\n\n    return randomObject;\n}\n\n// Output the generated random object\nmsg.payload = generateRandomObject();\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 320,
+        "wires": [
+            [
+                "049f22344c06ccd1"
+            ]
+        ]
+    },
+    {
+        "id": "7461ade5832b98aa",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "four button mode",
+        "func": "// Function to generate an object with exactly X keys set to 1\nfunction generateRandomObject() {\n    const keys = [\"left\", \"down\", \"up\", \"right\", \"circle\", \"triangle\", \"cross\", \"square\"];\n    const selectedIndices = [];\n\n    // Select X random indices\n    while (selectedIndices.length < 4) {\n        const randomIndex = Math.floor(Math.random() * keys.length);\n        if (!selectedIndices.includes(randomIndex)) {\n            selectedIndices.push(randomIndex);\n        }\n    }\n\n    const randomObject = {};\n\n    keys.forEach((key, index) => {\n        randomObject[key] = selectedIndices.includes(index) ? 1 : 0;\n    });\n\n    return randomObject;\n}\n\n// Output the generated random object\nmsg.payload = generateRandomObject();\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 360,
+        "wires": [
+            [
+                "049f22344c06ccd1"
+            ]
+        ]
+    },
+    {
+        "id": "ed9b417cb1c5934a",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "five button mode",
+        "func": "// Function to generate an object with exactly X keys set to 1\nfunction generateRandomObject() {\n    const keys = [\"left\", \"down\", \"up\", \"right\", \"circle\", \"triangle\", \"cross\", \"square\"];\n    const selectedIndices = [];\n\n    // Select X random indices\n    while (selectedIndices.length < 5) {\n        const randomIndex = Math.floor(Math.random() * keys.length);\n        if (!selectedIndices.includes(randomIndex)) {\n            selectedIndices.push(randomIndex);\n        }\n    }\n\n    const randomObject = {};\n\n    keys.forEach((key, index) => {\n        randomObject[key] = selectedIndices.includes(index) ? 1 : 0;\n    });\n\n    return randomObject;\n}\n\n// Output the generated random object\nmsg.payload = generateRandomObject();\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 1360,
+        "wires": [
+            [
+                "6cc2e3856d161071"
+            ]
+        ]
+    },
+    {
+        "id": "b059e9745f01aee5",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "six button mode",
+        "func": "// Function to generate an object with exactly X keys set to 1\nfunction generateRandomObject() {\n    const keys = [\"left\", \"down\", \"up\", \"right\", \"circle\", \"triangle\", \"cross\", \"square\"];\n    const selectedIndices = [];\n\n    // Select X random indices\n    while (selectedIndices.length < 6) {\n        const randomIndex = Math.floor(Math.random() * keys.length);\n        if (!selectedIndices.includes(randomIndex)) {\n            selectedIndices.push(randomIndex);\n        }\n    }\n\n    const randomObject = {};\n\n    keys.forEach((key, index) => {\n        randomObject[key] = selectedIndices.includes(index) ? 1 : 0;\n    });\n\n    return randomObject;\n}\n\n// Output the generated random object\nmsg.payload = generateRandomObject();\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 1400,
+        "wires": [
+            [
+                "6cc2e3856d161071"
+            ]
+        ]
+    },
+    {
+        "id": "52659c889b18fb10",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "seven button mode",
+        "func": "// Function to generate an object with exactly X keys set to 1\nfunction generateRandomObject() {\n    const keys = [\"left\", \"down\", \"up\", \"right\", \"circle\", \"triangle\", \"cross\", \"square\"];\n    const selectedIndices = [];\n\n    // Select X random indices\n    while (selectedIndices.length < 7) {\n        const randomIndex = Math.floor(Math.random() * keys.length);\n        if (!selectedIndices.includes(randomIndex)) {\n            selectedIndices.push(randomIndex);\n        }\n    }\n\n    const randomObject = {};\n\n    keys.forEach((key, index) => {\n        randomObject[key] = selectedIndices.includes(index) ? 1 : 0;\n    });\n\n    return randomObject;\n}\n\n// Output the generated random object\nmsg.payload = generateRandomObject();\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 1440,
+        "wires": [
+            [
+                "6cc2e3856d161071"
+            ]
+        ]
+    },
+    {
+        "id": "3995ecdce3b78ad8",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "five button mode",
+        "func": "// Function to generate an object with exactly X keys set to 1\nfunction generateRandomObject() {\n    const keys = [\"left\", \"down\", \"up\", \"right\", \"circle\", \"triangle\", \"cross\", \"square\"];\n    const selectedIndices = [];\n\n    // Select X random indices\n    while (selectedIndices.length < 5) {\n        const randomIndex = Math.floor(Math.random() * keys.length);\n        if (!selectedIndices.includes(randomIndex)) {\n            selectedIndices.push(randomIndex);\n        }\n    }\n\n    const randomObject = {};\n\n    keys.forEach((key, index) => {\n        randomObject[key] = selectedIndices.includes(index) ? 1 : 0;\n    });\n\n    return randomObject;\n}\n\n// Output the generated random object\nmsg.payload = generateRandomObject();\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 400,
+        "wires": [
+            [
+                "049f22344c06ccd1"
+            ]
+        ]
+    },
+    {
+        "id": "0bf1b24442642acb",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "six button mode",
+        "func": "// Function to generate an object with exactly X keys set to 1\nfunction generateRandomObject() {\n    const keys = [\"left\", \"down\", \"up\", \"right\", \"circle\", \"triangle\", \"cross\", \"square\"];\n    const selectedIndices = [];\n\n    // Select X random indices\n    while (selectedIndices.length < 6) {\n        const randomIndex = Math.floor(Math.random() * keys.length);\n        if (!selectedIndices.includes(randomIndex)) {\n            selectedIndices.push(randomIndex);\n        }\n    }\n\n    const randomObject = {};\n\n    keys.forEach((key, index) => {\n        randomObject[key] = selectedIndices.includes(index) ? 1 : 0;\n    });\n\n    return randomObject;\n}\n\n// Output the generated random object\nmsg.payload = generateRandomObject();\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 440,
+        "wires": [
+            [
+                "049f22344c06ccd1"
+            ]
+        ]
+    },
+    {
+        "id": "b109b50c2b133ddf",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "seven button mode",
+        "func": "// Function to generate an object with exactly X keys set to 1\nfunction generateRandomObject() {\n    const keys = [\"left\", \"down\", \"up\", \"right\", \"circle\", \"triangle\", \"cross\", \"square\"];\n    const selectedIndices = [];\n\n    // Select X random indices\n    while (selectedIndices.length < 7) {\n        const randomIndex = Math.floor(Math.random() * keys.length);\n        if (!selectedIndices.includes(randomIndex)) {\n            selectedIndices.push(randomIndex);\n        }\n    }\n\n    const randomObject = {};\n\n    keys.forEach((key, index) => {\n        randomObject[key] = selectedIndices.includes(index) ? 1 : 0;\n    });\n\n    return randomObject;\n}\n\n// Output the generated random object\nmsg.payload = generateRandomObject();\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 480,
+        "wires": [
+            [
+                "049f22344c06ccd1"
+            ]
+        ]
+    },
+    {
+        "id": "d01d3e822d2b5df5",
+        "type": "switch",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "mode",
+        "property": "mode",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Single button mode",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Two button mode",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Three button mode",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Four button mode",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Five button mode",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Six button mode",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Seven button mode",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Progressive mode",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Random buttons mode",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 9,
+        "x": 770,
+        "y": 380,
+        "wires": [
+            [
+                "a92476d0d4943542"
+            ],
+            [
+                "48bcfcee8f79385a"
+            ],
+            [
+                "0ffcd30caa50ca9d"
+            ],
+            [
+                "7461ade5832b98aa"
+            ],
+            [
+                "3995ecdce3b78ad8"
+            ],
+            [
+                "0bf1b24442642acb"
+            ],
+            [
+                "b109b50c2b133ddf"
+            ],
+            [
+                "3f4943958e930b13"
+            ],
+            [
+                "c8ef2f6dcb55b09a"
+            ]
+        ]
+    },
+    {
+        "id": "19299686bcd78be6",
+        "type": "inject",
+        "z": "42d29edbf28948ef",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 290,
+        "y": 920,
+        "wires": [
+            [
+                "6bef58d29c15174e"
+            ]
+        ]
+    },
+    {
+        "id": "7b83574c04439e46",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "1010c4613679a4f3",
+        "name": "progressive mode",
+        "func": "// Initialize the progress variable if not already set\nflow.set(\"progress2\", flow.get(\"progress2\", \"file\") || 1, \"file\");\n\n// Function to generate an object with a varying number of 1's in random positions\nfunction generateRandomIncrementalObject() {\n    const keys = [\"left\", \"down\", \"up\", \"right\", \"circle\", \"triangle\", \"cross\", \"square\"];\n    const numOnes = flow.get(\"progress2\", \"file\");\n\n    const randomIndices = [];\n\n    // Select random indices for 1's\n    while (randomIndices.length < numOnes) {\n        const randomIndex = Math.floor(Math.random() * keys.length);\n        if (!randomIndices.includes(randomIndex)) {\n            randomIndices.push(randomIndex);\n        }\n    }\n\n    const randomObject = {};\n\n    keys.forEach((key, index) => {\n        randomObject[key] = randomIndices.includes(index) ? 1 : 0;\n    });\n\n    return randomObject;\n}\n\n// Output the generated random incremental object\nmsg.payload = generateRandomIncrementalObject();\n\n// Increment the progress for the next input message\nflow.set(\"progress2\", ((flow.get(\"progress2\", \"file\") % 7) + 1), \"file\");\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 1480,
+        "wires": [
+            [
+                "6cc2e3856d161071"
+            ]
+        ]
+    },
+    {
+        "id": "77ddf5197ad237c7",
+        "type": "switch",
+        "z": "42d29edbf28948ef",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Progressive mode",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 1,
+        "x": 250,
+        "y": 720,
+        "wires": [
+            [
+                "8f43b7c4484baa86",
+                "1d0eef246b416f72"
+            ]
+        ]
+    },
+    {
+        "id": "8f43b7c4484baa86",
+        "type": "debug",
+        "z": "42d29edbf28948ef",
+        "name": "debug 357",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "1d0eef246b416f72",
+        "type": "change",
+        "z": "42d29edbf28948ef",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "7",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "progress1",
+                "pt": "flow",
+                "to": "1",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "progress2",
+                "pt": "flow",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 680,
+        "wires": [
+            [
+                "b836bbbdc3052fd4"
+            ]
+        ]
+    },
+    {
+        "id": "3f4943958e930b13",
+        "type": "function",
+        "z": "42d29edbf28948ef",
+        "g": "35c291051fa43ec6",
+        "name": "progressive mode",
+        "func": "// Initialize the progress variable if not already set\nflow.set(\"progress1\", flow.get(\"progress1\", \"file\") || 1, \"file\");\n\n// Function to generate an object with a varying number of 1's in random positions\nfunction generateRandomIncrementalObject() {\n    const keys = [\"left\", \"down\", \"up\", \"right\", \"circle\", \"triangle\", \"cross\", \"square\"];\n    const numOnes = flow.get(\"progress1\", \"file\");\n\n    const randomIndices = [];\n\n    // Select random indices for 1's\n    while (randomIndices.length < numOnes) {\n        const randomIndex = Math.floor(Math.random() * keys.length);\n        if (!randomIndices.includes(randomIndex)) {\n            randomIndices.push(randomIndex);\n        }\n    }\n\n    const randomObject = {};\n\n    keys.forEach((key, index) => {\n        randomObject[key] = randomIndices.includes(index) ? 1 : 0;\n    });\n\n    return randomObject;\n}\n\n// Output the generated random incremental object\nmsg.payload = generateRandomIncrementalObject();\n\n// Increment the progress for the next input message\nflow.set(\"progress1\", ((flow.get(\"progress1\", \"file\") % 7) + 1), \"file\");\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 520,
+        "wires": [
+            [
+                "049f22344c06ccd1"
+            ]
+        ]
+    },
+    {
+        "id": "f070c3c859fe208d",
+        "type": "ui_spacer",
+        "z": "42d29edbf28948ef",
+        "name": "spacer",
+        "group": "cdd3663f711e8806",
+        "order": 1,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "e18a8d981e8f5b41",
+        "type": "ui_spacer",
+        "z": "42d29edbf28948ef",
+        "name": "spacer",
+        "group": "cdd3663f711e8806",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4943bc572d859484",
+        "type": "ui_spacer",
+        "z": "42d29edbf28948ef",
+        "name": "spacer",
+        "group": "cdd3663f711e8806",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ec15c5f010cfaac0",
+        "type": "ui_spacer",
+        "z": "42d29edbf28948ef",
+        "name": "spacer",
+        "group": "cdd3663f711e8806",
+        "order": 10,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "327e79cdb11ca589",
+        "type": "ui_spacer",
+        "z": "42d29edbf28948ef",
+        "name": "spacer",
+        "group": "cdd3663f711e8806",
+        "order": 13,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "1e44a8ea03da017a",
+        "type": "ui_spacer",
+        "z": "42d29edbf28948ef",
+        "name": "spacer",
+        "group": "cdd3663f711e8806",
+        "order": 15,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "758a51149e0b73db",
+        "type": "ui_spacer",
+        "z": "42d29edbf28948ef",
+        "name": "spacer",
+        "group": "cdd3663f711e8806",
+        "order": 18,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "ec8d5cb7df1a0a4f",
+        "type": "ui_spacer",
+        "z": "42d29edbf28948ef",
+        "name": "spacer",
+        "group": "cdd3663f711e8806",
+        "order": 20,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "55f8c51260f62f2a",
+        "type": "websocket-listener",
+        "path": "/controller_1",
+        "wholemsg": "false"
+    },
+    {
+        "id": "cdd3663f711e8806",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "f76dd5b581845374",
+        "order": 2,
+        "disp": false,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2160113441ee449f",
+        "type": "websocket-listener",
+        "path": "/controller_2",
+        "wholemsg": "false"
+    },
+    {
+        "id": "f76dd5b581845374",
+        "type": "ui_tab",
+        "name": "Finger Twister",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
